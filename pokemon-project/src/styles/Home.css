@@ -1,0 +1,64 @@
+.container-fluid {
+  background-color: #a9dbe9;
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #bbe0ea, #89c5d1);
+}
+
+.background-text {
+  position: absolute;
+  top: 28%;
+  margin-left: 27%;
+  transform: translate(-50%, -50%);
+  font-size: 8vw;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.text-container {
+  margin-top: 15%;
+  margin-left: -8%;
+}
+
+.pokemon-image {
+  max-width: 80%;
+  left: auto;
+  right: -10%;
+  margin-top: 20%;
+  margin-left: 15vw;
+  position: relative;
+  z-index: 1;
+}
+
+.pokemon-image:hover {
+  animation: float 1s infinite alternate ease-in-out;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.secret-page {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #4aadce;
+}
+
+.secret-page a {
+  text-decoration: none;
+  color: #4aadce;
+}
+
+.secret-page a:hover {
+  text-decoration: underline;
+  color: #4397b4;
+}
