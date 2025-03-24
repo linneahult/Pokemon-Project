@@ -14,7 +14,7 @@ const SecretPage = () => {
       try {
         // hämta journaldata
         const journalResponse = await fetch(
-          "https://informatik12.ei.hv.se/JournalAPI/api/Journal/"
+          "https://informatik12.ei.hv.se/JournalAPI/api/Journal/" //API för journal
         );
         if (!journalResponse.ok) {
           throw new Error("Something went wrong fetching journal data");
@@ -23,7 +23,7 @@ const SecretPage = () => {
 
         // hämta patientdata
         const patientResponse = await fetch(
-          "https://informatik12.ei.hv.se/PatientAPI/api/Patient/"
+          "https://informatik12.ei.hv.se/PatientAPI/api/Patient/" //API för patient
         );
         if (!patientResponse.ok) {
           throw new Error("Something went wrong fetching patient data");

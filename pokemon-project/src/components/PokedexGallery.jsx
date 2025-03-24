@@ -6,15 +6,16 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import React, { useEffect, useState } from "react";
 
 const PokedexGallery = () => {
-  const [pokemonData, setPokemonData] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [pokemonData, setPokemonData] = useState([]); // variabel för pokemon-information
+  const [searchTerm, setSearchTerm] = useState(""); // variabel för sökning
+  const [loading, setLoading] = useState(true); // variabel för laddning
 
+  //REFERENS: chatGPT har använts som stöd för att generera kod på rad 16-28
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
         const response = await fetch(
-          "https://pokeapi.co/api/v2/pokemon?limit=500"
+          "https://pokeapi.co/api/v2/pokemon?limit=500" //extert API för att hämta pokemons
         );
         const data = await response.json();
 
@@ -33,7 +34,7 @@ const PokedexGallery = () => {
       } catch (error) {
         console.error("Error fetching Pokémon", error);
       } finally {
-        setLoading(false); // Slutar ladda oavsett om det lyckas eller inte
+        setLoading(false); // slutar ladda oavsett om det lyckas eller inte
       }
     };
 
