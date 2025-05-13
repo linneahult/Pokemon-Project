@@ -6,4 +6,4 @@ This project is Pokémon-inspired, retrieving information through an external AP
 - A comprehensive Pokédex with search function
 - Access a secret page
 
-Functions and pages that will be included in the project but have not yet been created include a discussion forum, a page to read about characters and teams, and login and user account management.
+Functions and pages that will be included in the project but have not yet been created including a discussion forum, a page to read about characters and teams, login and user account management.
